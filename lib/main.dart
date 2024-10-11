@@ -4,6 +4,7 @@ import 'package:islami_c12_maadi/quran_details/quran_details_screen.dart';
 import 'home/home_screen.dart';
 
 void main() {
+  // hello world
   runApp(const MyApp());
 }
 
