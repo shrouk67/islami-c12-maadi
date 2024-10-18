@@ -63,7 +63,7 @@ class QuranTab extends StatelessWidget {
               separatorBuilder: (context, index) => Divider(
                 height: 0,
               ),
-              itemCount: 20),
+              itemCount: suraNames.length),
         )
       ],
     );
