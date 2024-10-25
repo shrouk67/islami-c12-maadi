@@ -16,17 +16,13 @@ class _AhadethTabState extends State<AhadethTab> {
 
   @override
   Widget build(BuildContext context) {
-    print("rebuild");
     return ahadethList.isEmpty
         ?Center(child: CircularProgressIndicator(),)
         :Column(
       children: [
         Expanded(child: Image.asset("assets/images/hadith_header.png")),
         Divider(),
-        Text("Ahadeth",style: TextStyle(
-          fontWeight: FontWeight.w600,
-          fontSize: 25
-        ),),
+        Text("Ahadeth",style: Theme.of(context).textTheme.titleMedium,),
         Divider(),
         Expanded(
           flex: 2,
@@ -38,9 +34,8 @@ class _AhadethTabState extends State<AhadethTab> {
                 child: Text(
                   ahadethList[index].title,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 25
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.w400
                   ),
                 ),
               ),
