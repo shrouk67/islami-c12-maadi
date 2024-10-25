@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:islami_c12_maadi/ahadeth_details/ahadeth_details_screen.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'Hadeth.dart';
 
@@ -23,7 +24,7 @@ class _AhadethTabState extends State<AhadethTab> {
       children: [
         Expanded(child: Image.asset("assets/images/hadith_header.png")),
         Divider(),
-        Text("Ahadeth",style: TextStyle(
+        Text(AppLocalizations.of(context)!.ahadeth,style: TextStyle(
           fontWeight: FontWeight.w600,
           fontSize: 25
         ),),
