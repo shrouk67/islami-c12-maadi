@@ -3,6 +3,7 @@ import 'package:islami_c12_maadi/home/tabs/AhadethTab.dart';
 import 'package:islami_c12_maadi/home/tabs/QuranTab.dart';
 import 'package:islami_c12_maadi/home/tabs/RadioTab.dart';
 import 'package:islami_c12_maadi/home/tabs/SebhaTab.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami_c12_maadi/home/tabs/SettingsTab.dart';
 import 'package:islami_c12_maadi/style/AppStyle.dart';
 // this is home
@@ -34,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Islami"),
+          title: Text(AppLocalizations.of(context)!.islami),
         ),
         bottomNavigationBar: BottomNavigationBar(
             currentIndex: currentIndex,
@@ -48,26 +49,26 @@ class _HomeScreenState extends State<HomeScreen> {
                   backgroundColor: Theme.of(context).colorScheme.primary,
                   icon: const ImageIcon(
                 AssetImage("assets/images/moshaf_blue.png")
-              ),label: "Quran"),
+              ),label: AppLocalizations.of(context)!.quran),
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).colorScheme.primary,
 
                   icon: ImageIcon(
                   AssetImage("assets/images/ahadeth_icon.png")
-              ),label: "Ahadeth"),
+              ),label: AppLocalizations.of(context)!.ahadeth),
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).colorScheme.primary,
 
                   icon: ImageIcon(
                   AssetImage("assets/images/sebha_icon.png")
-              ),label: "Tasbeeh"),
+              ),label: AppLocalizations.of(context)!.tasbeeh),
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).colorScheme.primary,
 
                   icon: ImageIcon(
                   AssetImage("assets/images/radio_icon.png")
-              ),label: "Radio"),
-              BottomNavigationBarItem(
+              ),label: AppLocalizations.of(context)!.radio),
+        BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).colorScheme.primary,
 
                   icon: Icon(
