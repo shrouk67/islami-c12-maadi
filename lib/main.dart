@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: AppStyle.lightTheme,
       darkTheme:AppStyle.darkTheme ,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       initialRoute: HomeScreen.routeName,
       localizationsDelegates: [
         AppLocalizations.delegate,
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         Locale("en"),
         Locale("ar"),
       ],
-      locale: Locale("en"),
+      locale: Locale("ar"),
       routes: {
         HomeScreen.routeName:(_)=>HomeScreen(),
         QuranDetailsScreen.routeName :(_)=> QuranDetailsScreen(),
